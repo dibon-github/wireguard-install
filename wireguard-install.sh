@@ -157,5 +157,5 @@ net.ipv6.conf.all.forwarding = 1" > /etc/sysctl.d/wg.conf
 
 sysctl --system
 
-systemctl start "wg-quick@$SERVER_WG_NIC"
-systemctl enable "wg-quick@$SERVER_WG_NIC"
+systemctl start "wg-quick@$SERVER_WG_NIC" -i
+systemctl enable "wg-quick@$SERVER_WG_NIC" -i
